@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BCSCWS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo1.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+
+<!-- gallery -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<!-- <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css"> -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<link href="gallery.css" rel="stylesheet">
+    
+</head>
+<style>
+    .slow-beat {
+  -webkit-animation: fa-beat 3s infinite linear;
+  animation: fa-beat 3s infinite linear;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
+.slow-fade {
+  -webkit-animation: fa-fade 3s infinite linear;
+  animation: fa-fade 3s infinite linear;
+}
+
+element.style {
+    background-color: #2e6b25 !important;
+    color: #ffffff;
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap")
+  repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+body {
+  background: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("img/bg.png"),
+    #111111;
+  color: #eee;
+  height: 60vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+/* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img class="img-fluid animated pulse infinite" src="img/logo1.png" alt="" width="60%;">
+                    <!-- <h2 class="text-white">Hairnic</h2> -->
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="product.html" class="nav-item nav-link">Activities</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="how-to-use.html" class="dropdown-item">How To Use</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="blog.html" class="dropdown-item">Blog Articles</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <!-- <a href="product.html" class="nav-item nav-link">Register</a> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-success py-2  d-none d-lg-inline-block" style="background-color: #2e6b25;color:#fff;">
+                        Login
+                        <i class="fa-solid fa-lock slow-fade"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid hero-header mb-5" style="background-color: #ebebeb;">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <!-- <h3 class="fw-light text-white animated slideInRight">Bharatiya Common Service Center Workers Sangh</h3> -->
+                    <h1 class="display-4 animated slideInRight" style="color:#2e6b25;">Bharatiya Common Service Center Workers Sangh</h1>
+                    <p class="text-dark mb-4 animated slideInRight">Bharatiya Common Service Workers Sangh is under the biggest Trade Union viz Bharatiya Mazdoor Sangh (BMS). BMS is a worldwide biggest Trade Union.
+
+                    </p>
+                    <a href="" class="btn py-2 px-4 me-3 animated slideInRight" style="background-color: #f07739;color:#fff;">Register
+                       
+                       <i class="fa-solid fa-key slow-fade"></i>
+                    </a>
+                    <!-- <a href="" class="btn btn-outline-dark py-2 px-4 animated slideInRight">Contact Us</a> -->
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid animated pulse infinite" src="img/india.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Gallery Start -->
+
+
+
+
+
+    <section class="gallery">
+
+
+        <div class="options">
+            <div class="option " style="--optionBackground:url(img/aim1.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-walking"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Blonkisoaz</div>
+                     <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(img/aim2.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-snowflake"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Oretemauw</div>
+                     <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option active" style="--optionBackground:url(img/aim3.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-tree"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Iteresuselle</div>
+                     <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-tint"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Idiefe</div>
+                     <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+               </div>
+            </div>
+            <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+               <div class="shadow"></div>
+               <div class="label">
+                  <div class="icon">
+                     <i class="fas fa-sun"></i>
+                  </div>
+                  <div class="info">
+                     <div class="main">Inatethi</div>
+                     <div class="sub">Omuke trughte a otufta</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    
+    </section>
+    <!-- Gallery End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/bmslogo.png">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class=" mb-4" style="color:#3e4095;"> <span class="fw-light" style="color:#f07739";>About</span> BMS</h1>
+                    <!-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus. Praesent tristique odio ut rutrum pellentesque. Fusce eget molestie est, at rutrum est.</p> -->
+                    <p class="mb-4" style="text-align: justify;">The circumstances in which BHARATIYA MAZDOOR SANGH (BMS) came into existence in the trade union field of India have shaped its significant role in the trade union movement. BMS was founded on 23rd of July, 1955 – the day being the birth anniversary of Lok Manya Bal Gangadhar Tilak – veteran of Freedom Movement. Two important aspects stand out in connection with this:
+                        </p> 
+                        <p class="mb-4" style="text-align: justify;">(a) Formation of BMS was not the result of split in the existing trade union organizations, unlike in the case of almost all other trade unions.
+                            Hence it had the formidable responsibility of building its organizational structure from the grass root level. It started from zero having no trade union, no membership, no activist (karyakarta), no office and no fund.
+                            
+                    </p>
+                    <a class="btn  py-2 px-4" href="" style="background-color:#5f2910;color:#fff;">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+
+
+
+    <!-- How To Use Start -->
+    <div class="container-fluid how-to-use my-5 py-5 wrapper" style="background-color: #f67c15;">
+        <div class="container text-white py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="text-white mb-3">Bharatiya Common Service Center Workers Sangh</h1>
+                <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus.</p> -->
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn-square rounded-circle border mx-auto mb-4 " style="width: 120px; height: 120px;">
+                        <i class="fa fa-bullseye fa-3x  slow-beat" style="color: #602a10;"></i>
+        
+                    </div>
+                    <h5 class="text-white">Vision And Mission</h5>
+                    <hr class="w-25 bg-light my-2 mx-auto ">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</span>
+                </div>
+                <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
+                        <i class="fa fa-home fa-3x  fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;color: #602a10;"></i>
+                    </div>
+                    <h5 class="text-white">Apply Shampoo On Hair</h5>
+                    <hr class="w-25 bg-light my-2 mx-auto">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</span>
+                </div>
+                <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
+                        <i class="fa fa-star fa-3x  slow-spin" style="color: #602a10;"></i>
+                    </div>
+                    <h5 class="text-white">History of Trade Union movement</h5>
+                    <hr class="w-25 bg-light my-2 mx-auto">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How To Use End -->
+
+
+
+
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h1 class="mb-3" style="color: #602a10;"><span class="fw-light text-dark">Latest</span> Events <span class="fw-light text-dark">And</span> Achievements</h1>
+                <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus.</p> -->
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="blog-item border h-100 p-4">
+                        <img class="img-fluid mb-4" src="img/event1.jpeg" alt="" style="aspect-ratio: 1.4 / 1;">
+                        <a href="" class="h5 lh-base d-inline-block">സംസ്ഥാന സമ്മേളനം</a>
+                        <div class="d-flex text-black-50 mb-2">
+                            <div class="pe-3">
+                                <small class="fa fa-calendar me-1"></small>
+                                <small>Aug-03-2023</small>
+                            </div>
+                            <!-- <div class="pe-3">
+                                <small class="fa fa-comments me-1"></small>
+                                <small>9999 Comments</small>
+                            </div> -->
+                        </div>
+                        <p class="mb-4">ഭാരതീയ കോമൺ സർവീസ് സെന്റർ വർക്കേഴ്സ് സംഘം BCSCWS (കേരളം)
+
+                            സംസ്ഥാന സമ്മേളനം</p>
+                        <a href="" class="btn px-3" style="border:2px solid #602a10; background-color: #602a10; ">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="blog-item border h-100 p-4">
+                        <img class="img-fluid mb-4" src="img/event2.jpeg" alt="" style="aspect-ratio: 1.4 / 1;">
+                        <a href="" class="h5 lh-base d-inline-block">Online Training Program</a>
+                        <div class="d-flex text-black-50 mb-2">
+                            <div class="pe-3">
+                                <small class="fa fa-calendar me-1"></small>
+                                <small>Aug-03-2023</small>
+                            </div>
+                            <!-- <div class="pe-3">
+                                <small class="fa fa-comments me-1"></small>
+                                <small>9999 Comments</small>
+                            </div> -->
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</p>
+                        <a href="" class="btn px-3" style="border:2px solid #602a10; background-color: #602a10;">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="blog-item border h-100 p-4">
+                        <img class="img-fluid mb-4" src="img/event3.jpg" alt="" style="aspect-ratio: 1.4 / 1;">
+                        <a href="" class="h5 lh-base d-inline-block">ILGMS ഒഫീഷ്യൽ ലോഗിൻ CSC കൾക്ക്...</a>
+                        <div class="d-flex text-black-50 mb-2">
+                            <div class="pe-3">
+                                <small class="fa fa-calendar me-1"></small>
+                                <small>Aug-03-2023</small>
+                            </div>
+                            <!-- <div class="pe-3">
+                                <small class="fa fa-comments me-1"></small>
+                                <small>9999 Comments</small>
+                            </div> -->
+                        </div>
+                        <p class="mb-4">ILGMS ഒഫീഷ്യൽ ലോഗിൻ ആയി ബന്ധപ്പെട്ടു BCSCWS നിയുക്ത മന്ത്രി ശ്രീ ഗോവിന്ദൻ മാസ്റ്റർ ,</p>
+                        <a href="" class="btn px-3" style="border:2px solid #602a10; background-color: #602a10;">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn px-3 blog-item" style="border:2px solid #602a10; background-color: #602a10;
+            margin-top: 5%; margin-left: 45%;">Read More</a>
+        </div>
+
+    </div>
+
+    <!-- Blog End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid newsletter  py-5 my-5" style="background-color: #602a10;">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="text-white mb-3">We Have a Feature Rich User Portal For Members</h1>
+                <!-- <p class="text-white mb-4">Subscribe now to get 30% discount on any of our products</p> -->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <center><a class="btn  py-2 px-4" href="" style="background-color:#fff;color:#602a10; border:2px solid #000">Join As Member <i
+                            class="fa fa-user fs-4"></i></a></center>
+                        <!-- <input class="form-control w-100 py-4 ps-4 pe-5" type="text" placeholder="Enter Your Email"
+                            style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-white fs-4"></i></button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white footer">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="" style="color: #656565;">BCSCWS</h1>
+                    </a>
+                    <p class="mb-0">Bharatiya Common Service Workers Sangh is under the biggest Trade Union viz Bharatiya Mazdoor Sangh (BMS)</p>
+                    <img class="img-fluid" src="img/logo1.png" alt="">
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Marayil Lane, Chittoor Road,
+                        Kochi-18</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+919895999229</p>
+                    <p><i class="fa fa-envelope me-3"></i>bcscwskerala@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square  me-1 dd" href="" style="border:3px solid #f67c15;"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square  me-1 dd" href="" style="border:3px solid #f67c15;"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square  me-1 dd" href="" style="border:3px solid #f67c15;"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square  me-1 dd" href="" style="border:3px solid #f67c15;"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="mb-4">Our Products</h5>
+                    <a class="btn btn-link" href="">Hair Shining Shampoo</a>
+                    <a class="btn btn-link" href="">Anti-dandruff Shampoo</a>
+                    <a class="btn btn-link" href="">Anti Hair Fall Shampoo</a>
+                    <a class="btn btn-link" href="">Hair Growing Shampoo</a>
+                    <a class="btn btn-link" href="">Anti smell Shampoo</a>
+                </div> -->
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="">Home</a>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Activities</a>
+                    <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
+                   
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <center><div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">BCSCWS</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://bharathitech.com"><b>BharathiTech</b></a> 
+                    </div></center>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square back-to-top" style="background-color: #2e6b25;color: #fff;"><i class="fa-solid fa-arrow-up slow-fade"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+
+    <!-- gallery js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <script>
+   $(document).ready(function() {
+       $(".option").click(function() {
+           $(".option").removeClass("active");
+           $(this).addClass("active");
+       });
+   });
+   
+   
+    </script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+   
+</body>
+
+</html>
